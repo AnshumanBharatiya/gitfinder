@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<title>GitHub Finder </title>
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+			*{
+				font-family: 'Nova Square', cursive;
+			}
+			::selection{
+				color: #fefefe;
+				background: #2f2f2f;
+			}
+			h1,h2,.lead{
+				font-weight: bold;
+			}
+			.navbar{
+				height: 85px;
+			}
+			.navbar-brand{
+				font-size: 35px;
+				letter-spacing: 1px;
+			}
+			.entry{
+				border-color: #029ACF;
+				height: 40px;
+				font-size: 20px;
+				padding: 15px;
+				letter-spacing: 1px;
+			}
+			.entry:focus{
+				border-color: #007bff;
+				box-shadow: 0 0 6px 0 #029ACF;
+			}
+			.link{
+				text-decoration: none;
+				transition: .3s;
+			}
+			.link:hover{
+				font-size: 15px;
+			}
+			@media screen and (max-width: 350px){
+				.navbar-brand{
+					font-size: 30px;
+				}
+				h1{
+					font-size: 30px;
+				}
+			}
+			@media screen and (max-width: 300px){
+				.navbar{
+					height: 110px;
+				}
+				
+				h1{
+					font-size: 25px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+			<div class="container">
+				<div class="navbar-header">
+					<i class="fa fa-github-square text-light" style="font-size: 40px"></i>
+				</div>
+				<div class="navbar-header">
+					<h2 class="navbar-brand text-light">Git<span class="text-dark">Hub</span> Finder</h2>
+				</div>
+			</div>
+		</nav>
+		<div class="container mt-4">
+			<div class="searchContainer">
+				<h1>Search Git<span class="text-info">Hub</span> Users</h1>
+				<p class="lead">Enter a Username to fetch a Users profile info and repositories</p>
+				<input type="text" id="search" class="form-control entry" placeholder="Enter Github Username..." autocomplete="off">
+			</div>
+			<br>
+			<div id="profile"></div>
+		</div>
+		<!-- script part -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/git.js"></script>
+	</body>
+</html>
