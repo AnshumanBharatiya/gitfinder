@@ -55,8 +55,8 @@ $('#profile').html(`
 			<br><br>
 			<ul class="list-group">
 				<li class="list-group-item"><strong>Company:</strong> ${user.company}</li>
-				<li class="list-group-item"><strong>Website/blog:</strong> <a href="${user.blog}" target="_blank" class="text-info link">${user.blog}</a></li>
-				<li class="list-group-item"><strong>Twitter Username:</strong> ${user.twitter_username}</li>
+				<li class="list-group-item"><strong>Website/blog:</strong> <a href="${user.blog}" class="text-info link">${user.blog}</a></li>
+				<li class="list-group-item"><strong>Twitter Username:</strong> <a href="https://twitter.com/${user.twitter_username}" class="text-info link">${user.twitter_username}</a></li>
 				<li class="list-group-item"><strong>Email ID:</strong> ${user.email}</li>
 				<li class="list-group-item"><strong>Location:</strong> ${user.location}</li>
 				<li class="list-group-item"><strong>Member Since:</strong> ${user.created_at}</li>
